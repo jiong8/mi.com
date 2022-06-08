@@ -1,0 +1,329 @@
+@charset 'utf-8';
+html,
+body {
+  height: 100%;
+}
+a {
+  text-decoration: none;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+.mi-sider-layout {
+  display: flex;
+  height: 100%;
+}
+.mi-sider-layout .mi-sider-layout_sider {
+  width: 375px;
+  flex-shrink: 0;
+  flex-grow: 0;
+}
+.mi-sider-layout .mi-sider-layout_sider .mi-sider-layout_banner {
+  background-image: url("../../images/login.jpg");
+  background-size: cover;
+  background-position: 50%;
+  width: 375px;
+  height: 100%;
+}
+.mi-sider-layout .mi-sider-layout_content {
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+.mi-sider-layout .mi-sider-layout_content .mi-sider-layout__scroll {
+  height: 100%;
+  overflow: auto;
+}
+.mi-sider-layout .mi-sider-layout_content .mi-sider-layout__scroll .mi-layout {
+  position: relative;
+  min-height: 100vh;
+  padding-bottom: 40px;
+}
+.mi-sider-layout .mi-sider-layout_content .mi-sider-layout__scroll .mi-layout .mi-copyright {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  position: absolute;
+  text-align: center;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  color: #999;
+  font-size: 12px;
+}
+.mi-sider-layout .mi-sider-layout_content .mi-sider-layout__scroll .mi-layout .mi-layout_header {
+  padding: 20px;
+  overflow: hidden;
+}
+.mi-sider-layout .mi-sider-layout_content .mi-sider-layout__scroll .mi-layout .mi-layout_header .mi-layout_title {
+  float: left;
+  height: 40px;
+  font-size: 26px;
+  font-weight: 500;
+  color: #333;
+  line-height: 40px;
+}
+.mi-sider-layout .mi-sider-layout_content .mi-sider-layout__scroll .mi-layout .mi-layout_header .mi-layout_title .mi-layout_logo-wrap {
+  display: inline-block;
+  vertical-align: top;
+  width: 40px;
+  height: 40px;
+  background-image: url("../../images/logo-mi2.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.mi-sider-layout .mi-sider-layout_content .mi-sider-layout__scroll .mi-layout .mi-layout_header .mi-nav {
+  float: right;
+}
+.mi-sider-layout .mi-sider-layout_content .mi-sider-layout__scroll .mi-layout .mi-layout_header .mi-nav .mi-nav_item {
+  margin-left: 10px;
+  margin-right: 10px;
+  display: inline-block;
+  height: 40px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #838383;
+  line-height: 40px;
+}
+.mi-sider-layout .mi-sider-layout_content .mi-sider-layout__scroll .mi-layout .mi-layout_header .mi-nav .mi-nav_item:hover {
+  color: #ff6900;
+}
+.mi-sider-layout .mi-sider-layout_content .mi-sider-layout__scroll .mi-layout .mi-layout_header .mi-nav .mi-nav_divider {
+  margin-left: 10px;
+  margin-right: 10px;
+  border-right: 1px solid #ddd;
+  vertical-align: middle;
+  display: inline-block;
+  height: 14px;
+  width: 0;
+}
+.mi-sider-layout .mi-sider-layout_content .mi-sider-layout__scroll .mi-layout .mi-layout_container {
+  padding-top: 40px;
+  text-align: center;
+  position: relative;
+  box-sizing: border-box;
+}
+.mi-sider-layout .mi-sider-layout_content .mi-sider-layout__scroll .mi-layout .mi-layout_container .mi-layout_card {
+  display: inline-block;
+  box-sizing: border-box;
+  overflow: hidden;
+  position: relative;
+  min-width: 450px;
+  text-align: left;
+  border-radius: 4px;
+  padding: 40px 45px;
+  margin: 0 auto 80px;
+  box-shadow: 0 20px 50px 0 hsla(0, 0%, 63.5%, 0.1);
+}
+.mi-sider-layout .mi-sider-layout_content .mi-sider-layout__scroll .mi-layout .mi-layout_container .mi-layout_card .tabs {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 16px;
+}
+.mi-sider-layout .mi-sider-layout_content .mi-sider-layout__scroll .mi-layout .mi-layout_container .mi-layout_card .tabs .ink-bar1 {
+  position: absolute;
+  background: #ff5c00;
+  pointer-events: none;
+  border-radius: 2px;
+  width: 44px;
+  height: 4px;
+  left: 65px;
+  bottom: 0px;
+}
+.mi-sider-layout .mi-sider-layout_content .mi-sider-layout__scroll .mi-layout .mi-layout_container .mi-layout_card .tabs .ink-bar {
+  position: absolute;
+  background: #ff5c00;
+  pointer-events: none;
+  border-radius: 2px;
+  width: 44px;
+  height: 4px;
+  left: 0px;
+  bottom: 0px;
+}
+.mi-sider-layout .mi-sider-layout_content .mi-sider-layout__scroll .mi-layout .mi-layout_container .mi-layout_card .tabs > div {
+  font-size: 22px;
+  font-weight: 400;
+  float: left;
+  width: 44px;
+  height: 37px;
+  margin-right: 20px;
+}
+.mi-sider-layout .mi-sider-layout_content .mi-sider-layout__scroll .mi-layout .mi-layout_container .mi-layout_card .tabs > div a {
+  color: #bbb;
+}
+.mi-sider-layout .mi-sider-layout_content .mi-sider-layout__scroll .mi-layout .mi-layout_container .mi-layout_card .tabs > div .active {
+  color: #333;
+  font-weight: 550;
+}
+/* 表单 */
+.mi-form {
+  padding: 20px 2px 0;
+}
+.mi-form .mt {
+  margin-top: 20px;
+}
+.mi-form .mi-form_text {
+  position: relative;
+  width: 354px;
+  height: 60px;
+  box-sizing: border-box;
+}
+.mi-form .mi-form_text:focus-within label {
+  font-size: 12px;
+  top: 10px;
+}
+.mi-form .mi-form_text:focus-within input {
+  outline: 1px solid #ff5c00;
+  background-color: #fff;
+}
+.mi-form .mi-form_text .mi-text_input {
+  border-radius: 2px;
+  width: 100%;
+  height: 60px;
+  padding: 30px 20px 10px;
+  border: none;
+  background: rgba(0, 0, 0, 0.025);
+  box-sizing: border-box;
+}
+.mi-form .mi-form_text label {
+  position: absolute;
+  cursor: text;
+  top: 20px;
+  left: 20px;
+  height: 20px;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 20px;
+  transition: top 0.15s cubic-bezier(0.4, 0, 0.2, 1), font-size 0.15s cubic-bezier(0.4, 0, 0.2, 1), color 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+  max-width: calc(100% - 20px);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  color: rgba(0, 0, 0, 0.4);
+}
+.mi-form .mi-accept {
+  font-size: 14px;
+  font-weight: 400;
+  color: #aaa;
+  line-height: 20px;
+}
+.mi-form .mi-accept a {
+  color: #333;
+}
+.mi-form .mi-accept .checkbox {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 20px;
+  height: 20px;
+  margin: 0;
+  padding: 0;
+  color: rgba(0, 0, 0, 0.85);
+  font-size: 14px;
+  font-variant: tabular-nums;
+  line-height: 1.5715;
+  list-style: none;
+  font-feature-settings: "tnum", "tnum";
+  position: relative;
+  top: 0px;
+  line-height: 1;
+  white-space: nowrap;
+  cursor: pointer;
+}
+.mi-form .mi-accept .checkbox > input[type="checkbox"] {
+  position: absolute;
+  top: 0px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  outline: none;
+  opacity: 0;
+}
+.mi-form .mi-accept .checkbox > input[type="checkbox"]:checked ~ .inner {
+  color: #f9f9f9;
+  background-color: #ff5c00;
+}
+.mi-form .mi-accept .checkbox > .inner {
+  width: 20px;
+  height: 20px;
+  color: #fff;
+  position: relative;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 16px;
+  height: 16px;
+  direction: ltr;
+  background-color: #fff;
+  border: 1px solid #d9d9d9;
+  border-radius: 2px;
+  border-collapse: separate;
+  transition: all 0.3s;
+}
+.mi-form .btn {
+  background-color: #ff5c00;
+  width: 100%;
+  margin-bottom: 10px;
+  cursor: pointer;
+  text-align: center;
+  border: none;
+  padding: 0 20px;
+  border-radius: 4px;
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 18px;
+  font-weight: 400;
+  color: #fff;
+  opacity: 0.4;
+  line-height: 60px;
+  height: 60px;
+  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.mi-form .btn:hover {
+  opacity: 0.3;
+}
+.mi-form .mi-actions::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.mi-form .mi-actions a {
+  color: #ff5c00;
+}
+.mi-form .mi-actions .mi-left {
+  float: left;
+  margin-bottom: 10px;
+}
+.mi-form .mi-actions .mi-right {
+  float: right;
+  margin-bottom: 10px;
+}
+.mi-form .mi-anotherlogin .mi-logintitle {
+  font-size: 17px;
+  font-weight: 400;
+  color: #aaa;
+  line-height: 40px;
+  text-align: center;
+}
+.mi-form .mi-anotherlogin .mi-logincontent {
+  margin-top: 10px;
+  height: 46px;
+  overflow: hidden;
+  text-align: center;
+  padding-left: 44px;
+}
+.mi-form .mi-anotherlogin .mi-logincontent .mi-login_item {
+  float: left;
+  margin: 0 12px;
+}
+.mi-form .mi-anotherlogin .mi-logincontent .mi-login_item img {
+  width: 46px;
+  height: 46px;
+}

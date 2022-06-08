@@ -1,0 +1,189 @@
+@charset 'utf-8';
+.container {
+  width: 1226px;
+  margin: 0 auto;
+}
+.container .footer-service {
+  padding: 27px 0;
+  height: 25px;
+  border-bottom: 1px solid #e0e0e0;
+}
+.container .footer-service .list-service {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.container .footer-service .list-service li {
+  float: left;
+  width: 19.8%;
+  height: 26px;
+  border-left: 1px solid #e0e0e0;
+  font-size: 16px;
+  line-height: 25px;
+  text-align: center;
+}
+.container .footer-service .list-service li a {
+  text-decoration: none;
+  color: #616161;
+}
+.container .footer-service .list-service li a i {
+  font-size: 24px;
+}
+.container .footer-service .list-service li a:hover {
+  color: #ff6700;
+}
+.container .footer-service .list-service .first {
+  border: 0;
+}
+.container .footer-links {
+  padding: 40px 0;
+  height: 155px;
+}
+.container .footer-links .col-links {
+  float: left;
+  width: 160px;
+  margin: 0;
+}
+.container .footer-links .col-links dt {
+  margin: -1px 0 26px;
+  font-size: 14px;
+  line-height: 1.25;
+  color: #424242;
+}
+.container .footer-links .col-links dd {
+  margin-top: 12px;
+  font-size: 12px;
+}
+.container .footer-links .col-links dd:hover {
+  color: #ff6700;
+}
+.container .footer-links .col-contact {
+  float: right;
+  width: 251px;
+  border-left: 1px solid #e0e0e0;
+  text-align: center;
+  color: #616161;
+}
+.container .footer-links .col-contact .phone {
+  font-size: 22px;
+  line-height: 22px;
+  color: #ff6700;
+  margin-bottom: 5px;
+}
+.container .footer-links .col-contact .time {
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+.container .footer-links .col-contact .btn {
+  display: inline-block;
+  text-decoration: none;
+  height: 28px;
+  width: 118px;
+  font-size: 12px;
+  line-height: 28px;
+  background-color: #fff;
+  color: #ff6700;
+  border: 1px solid #ff6700;
+}
+.container .footer-links .col-contact .btn i {
+  font-size: 12px;
+}
+.container .footer-links .col-contact .btn:hover {
+  background-color: #ff6700;
+  color: #fff;
+}
+.container .footer-links .col-contact .follow {
+  font-size: 12px;
+  margin-top: 10px;
+  position: relative;
+}
+.container .footer-links .col-contact .follow a {
+  text-decoration: none;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+  margin-left: 6px;
+  margin-top: -3px;
+  color: #757575;
+}
+.container .footer-links .col-contact .follow a i {
+  font-size: 24px;
+}
+.container .footer-links .col-contact .follow a img {
+  display: block;
+  width: 126px;
+  height: 0px;
+  z-index: 2;
+  position: absolute;
+  top: 20px;
+  left: 100px;
+  overflow: hidden;
+  transition: height 0s;
+}
+.container .footer-links .col-contact .follow a:hover {
+  color: #ff6700;
+}
+.container .footer-links .col-contact .follow .wx:hover img {
+  height: 126px;
+}
+.site-info {
+  font-size: 12px;
+  background: #fafafa;
+  padding: 30px 0;
+}
+.site-info .container-info {
+  width: 1226px;
+  margin: 0 auto;
+  position: relative;
+}
+.site-info .container-info .info-loge {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-right: 20px;
+}
+.site-info .container-info .info-loge img {
+  display: block;
+  height: 56px;
+  width: 56px;
+}
+.site-info .container-info .info-text {
+  padding-left: 77px;
+}
+.site-info .container-info .info-text .texts {
+  line-height: 18px;
+}
+.site-info .container-info .info-text .texts a {
+  text-decoration: none;
+  color: #757575;
+}
+.site-info .container-info .info-text .texts a:hover {
+  color: #ff6700;
+}
+.site-info .container-info .info-text .texts2 {
+  font-size: 12px;
+  color: #b0b0b0;
+}
+.site-info .container-info .info-text .texts2 a {
+  text-decoration: none;
+  color: #b0b0b0;
+}
+.site-info .container-info .info-text .texts2 a:hover {
+  color: #ff6700;
+}
+.site-info .container-info .info-links {
+  padding-left: 77px;
+  margin-top: 4px;
+  margin-bottom: 15px;
+}
+.site-info .container-info .info-links img {
+  height: 28px;
+}
+.site-info .solgan {
+  width: 1226px;
+  margin: 30px auto 0;
+  text-align: center;
+  font-size: 19px;
+  color: #c9c9c9;
+}

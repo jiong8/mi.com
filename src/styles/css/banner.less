@@ -1,0 +1,104 @@
+.banner-wrap {
+  width: 100%;
+  .banner-container {
+    width: 1226px;
+    margin: 0 auto;
+    .swiper {
+      width: 1226px;
+      height: 460px;
+      position: relative;
+      background-color: pink;
+      .swiper-wrapper {
+        .swiper-slide {
+          img {
+            width: 1226px;
+            height: 460px;
+          }
+        }
+      }
+      .swiper-button-prev {
+        left: 250px;
+        color: #ccc;
+      }
+      .swiper-button-next {
+        color: #ccc;
+      }
+      .swiper-pagination {
+        left: 555px;
+      }
+    }
+    > .adv {
+      width: 100%;
+      height: 210px;
+      box-sizing: border-box;
+      > .adv-wrap {
+        width: 1226px;
+        margin: 0 auto;
+        margin-top: 14px;
+        > .adv-aside {
+          float: left;
+          width: 234px;
+          height: 170px;
+          background-color: #5f5750;
+
+          > .aside-list {
+            padding: 3px;
+            list-style: none;
+            li {
+              position: relative;
+              font-size: 12px;
+              float: left;
+              width: 76px;
+              height: 82px;
+              > a {
+                color: #fff;
+                opacity: 0.7;
+                display: block;
+                padding-top: 18px;
+                text-align: center;
+                > i {
+                  font-size: 22px;
+                }
+                &:hover {
+                  opacity: 1;
+                }
+              }
+              &::after {
+                width: 64px;
+                height: 1px;
+                top: -1px;
+                left: 6px;
+                position: absolute;
+                background: #665e57;
+                content: "";
+              }
+              &::before {
+                width: 1px;
+                height: 70px;
+                position: absolute;
+                background: #665e57;
+                left: 0px;
+                top: 6px;
+                content: "";
+              }
+            }
+          }
+        }
+        > .adv-img {
+          float: left;
+          width: 316px;
+          height: 170px;
+          background-color: red;
+          margin-left: 14.6px;
+          transition: all 0.2s;
+          img {
+            width: 100%;
+          }
+          &:hover {
+            box-shadow: 0 15px 30px rgb(0 0 0 / 10%);
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,98 @@
+@charset 'utf-8';
+//版芯1226px
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font: 14px/1.5 Helvetica Neue, Helvetica, Arial, Microsoft Yahei,
+    Hiragino Sans GB, Heiti SC, WenQuanYi Micro Hei, sans-serif;
+  color: #333;
+  background-color: #fff;
+  min-width: 1226px;
+}
+
+#header {
+  background-color: rgb(51, 51, 51);
+  height: 40px;
+  width: 100%;
+  a {
+    text-decoration: none;
+    color: #b0b0b0;
+    line-height: 40px;
+    display: inline-block;
+  }
+  a:hover {
+    color: white;
+  }
+  .line {
+    margin: 0 0.3em;
+    background-color: #424242;
+  }
+  > .container {
+    margin: 0 auto;
+    width: 1226px;
+    height: 40px;
+    font-size: 12px;
+
+    // background-color: aquamarine;
+
+    > #header-nav {
+      float: left;
+      // background-color: white;
+    }
+    .cart {
+      float: right;
+      width: 120px;
+      height: 40px;
+      margin-left: 15px;
+      position: relative;
+      // z-index: 32;
+      a {
+        display: block;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        color: #b0b0b0;
+        background: #424242;
+        transition: 0.3s;
+
+        i {
+          margin-right: 4px;
+          font-size: 20px;
+          line-height: 20px;
+          vertical-align: -4px;
+        }
+      }
+      .mainboard {
+        width: 316px;
+        height: 0px;
+        text-align: center;
+        line-height: 100px;
+        box-shadow: 0 5px 10px rgb(0 0 0 / 15%);
+        overflow: hidden;
+        position: absolute;
+        left: -195px;
+        // display: none;
+        transition: height 0.3s;
+      }
+      &:hover {
+        a {
+          background-color: #fff;
+          color: rgb(255, 103, 6);
+        }
+        .mainboard {
+          height: 100px;
+          z-index: 99;
+          background-color: #fff;
+          // display: block;
+          transition: height 0.3s;
+        }
+      }
+    }
+
+    .header-info {
+      float: right;
+    }
+  }
+}
