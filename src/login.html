@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1" />
     <title>Document</title>
     <link rel="stylesheet" href="./styles/css/login.css" />
   </head>
@@ -35,15 +35,17 @@
                   <div class="register"><a href="./register.html">注册</a></div>
                   <div class="ink-bar"></div>
                 </div>
-                <form action="#" class="mi-form">
+                <div  class="mi-form">
                     <div class="mi-form_text">
-                        <input type="text" class="mi-text_input" id="uname">
-                        <label for="uname">邮箱/手机号码/小米ID</label>
+                        <input type="text" class="mi-text_input" id="uname" value="">
+                        <label for="uname" class="label_name">邮箱/手机号码/小米ID</label>
                     </div>
+                    <p class="hint_1">请输入账号</p>
                     <div class="mi-form_text mt">
-                        <input type="password" class="mi-text_input" id="uname">
-                        <label for="uname">密码</label>
+                        <input type="password" class="mi-text_input" id="password" value="">
+                        <label for="password" class="label_pwd">密码</label>
                     </div>
+                    <p class="hint_2">请输入密码</p>
                     <div class="mi-accept mt">
                         <label for="ucheck">
                             <span class="checkbox">
@@ -84,3 +86,5 @@
     </div>
   </body>
 </html>
+<script src="./js/ajax.js" type="module"></script>
+<script src="./js/loginstyle.js" type="module"></script>

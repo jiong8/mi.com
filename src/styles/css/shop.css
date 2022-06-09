@@ -139,6 +139,9 @@
   top: -1px;
   cursor: pointer;
 }
+.page-main .container .container-main .cart-wrap .cart-goods-list .col-check i:active {
+  background-color: #ff6700;
+}
 .page-main .container .container-main .cart-wrap .cart-goods-list .col-img {
   width: 120px;
 }
