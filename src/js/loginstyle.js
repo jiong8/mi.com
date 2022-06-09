@@ -1,6 +1,13 @@
 import $ from "./jquery.js";
 //用户名输入框动画
 $("#uname").on("blur", function () {
+  if ($("#uname").val() && $("#password").val()) {
+    $("button").css({ opacity: 1, cursor: "pointer" });
+    $("button").removeAttr("disabled");
+  } else {
+    $("button").css({ opacity: 0.4, cursor: "default" });
+    $("button").attr("disabled", "true");
+  }
   if ($("#uname").val()) {
     // console.log(1);
     $(".label_name").css({
@@ -38,6 +45,13 @@ $("#uname").on("focus", function () {
 });
 //密码输入框动画
 $("#password").on("blur", function () {
+  if ($("#uname").val() && $("#password").val()) {
+    $("button").css({ opacity: 1, cursor: "pointer" });
+    $("button").removeAttr("disabled");
+  } else {
+    $("button").css({ opacity: 0.4, cursor: "default" });
+    $("button").attr("disabled", "true");
+  }
   if ($("#password").val()) {
     $(".label_pwd").css({
       "font-size": "12px",
