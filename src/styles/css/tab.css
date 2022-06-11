@@ -265,7 +265,6 @@
   transition: height 0.3s;
   border-top: 1px solid #ccc;
   background-color: #fff;
-  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.18);
   display: none;
 }
 #header .site-header .tab-box > .list-box .tab-list > .nav-item > .item-children a {

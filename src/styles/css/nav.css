@@ -14,6 +14,11 @@ body {
   height: 40px;
   width: 100%;
 }
+#header::after {
+  content: "";
+  display: block;
+  clear: both;
+}
 #header a {
   text-decoration: none;
   color: #b0b0b0;

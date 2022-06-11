@@ -8,24 +8,27 @@ $(".nav-item").each((i, el) => {
       display: "block",
       /*  "border-top": "1px solid #e0e0e0", */
       height: "229px",
+      "box-shadow": "0 3px 4px rgba(0, 0, 0, 0.18)",
     });
   });
   $(el).on("mouseout", function () {
     $(this).children(".item-children").css({
       // "border-top": "none",
       height: "0",
+      "box-shadow": "0 0px 0px #fff",
     });
   });
 });
 /* ----------------------------------------------------- */
 let index;
-$(".more>a").on("mouseover", function () {
-  index = $(this).index(".more>a");
+$(".Js_more>a").on("mouseover", function () {
+  index = $(this).index(".Js_more>a");
   // console.log(index);
-  $(".more>a").removeClass("active");
+  $(".Js_more>a").removeClass("active");
   $(this).addClass("active");
   $(".watch").addClass("disnone");
-  $(`.watch:nth-child(${index + 1})`).removeClass("disnone");
+  // console.log($(`.watch:nth-child(${index})`));
+  $(`.watch:eq(${index})`).removeClass("disnone");
 });
 //轮播图
 const mySwiper = new Swiper(".swiper", {
